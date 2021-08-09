@@ -24,7 +24,7 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 
 ## Assignment Submission
 
-# Reverse an Array
+## Reverse an Array
 Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 ## Whiteboard Process
@@ -33,4 +33,14 @@ Write a function called reverseArray which takes an array as an argument. Withou
 ## Approach & Efficiency
 we will loop throw the array from the last element to the first each loop will push  the value to a new array and it will be the reverse array
 
+
+## array-insert-shift
+Write a function called insertShiftArray which takes in an array and a value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
+
+## Whiteboard Process
+![array-insert-shift](../../whiteBoard/array-insert-shift.JPG)
+
+## Approach & Efficiency
+i will make new arr then 
+i will divide the length of the array by 2 and i will put the value in indexLength  then i will loop throw the array if the index = indexLength i will push the value of index and the new value in to the new array  if not i will push the value of array index  into the new arr. 
 
