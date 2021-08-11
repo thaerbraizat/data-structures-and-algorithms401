@@ -44,3 +44,17 @@ Write a function called insertShiftArray which takes in an array and a value to 
 i will make new arr then 
 i will divide the length of the array by 2 and i will put the value in indexLength  then i will loop throw the array if the index = indexLength i will push the value of index and the new value in to the new array  if not i will push the value of array index  into the new arr. 
 
+
+## BinarySearch 
+Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the value of the search key, or -1 if the element is not in the array.
+## Whiteboard Process
+
+![array-insert-shift](../../whiteBoard/BinarySearch.JPG)
+
+## Approach & Efficiency
+
+we will make start varirble and give him zero value and end with arr.length-1 then we will loop  
+until the start <= end 
+divine a new varible mid = start and end divided by 2 note every loop will change
+the i will make if arr of index mid equal x we will return the x else if  arr of index mid less than x we will change the start to the mid +1 esle we will change the end =mid -1
+after this we return -1
