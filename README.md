@@ -61,3 +61,23 @@ until the start <= end
 divine a new varible mid = start and end divided by 2 note every loop will change
 the i will make if arr of index mid equal x we will return the x else if  arr of index mid less than x we will change the start to the mid +1 esle we will change the end =mid -1
 after this we return -1
+
+
+## Singly Linked List
+A singly linked list is a type of linked list that is unidirectional, that is, it can be traversed in only one direction from head to the last node (tail). Each element in a linked list is called a node. A single node contains data and a pointer to the next node which helps in maintaining the structure of the list.
+
+## Challenge
+
+you need to understand how linkedList work to be able to write functions and test
+
+## Approach & Efficiency
+
+LinkedList is that insertions and deletion can be done very quickly.
+If you just want to insert an element right to the beginning of the LinkedList, that can be done in constant time O(1).
+
+ 
+## API
+* insert(value) => add value to the linkedList
+* includes(value) => check if the value exist in the linkedList
+* toString()=>a string representing all the values in the Linked List, formatted as:
+"  a  ->  b  ->  c  -> NULL"
