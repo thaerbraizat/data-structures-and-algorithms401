@@ -81,3 +81,8 @@ If you just want to insert an element right to the beginning of the LinkedList, 
 * includes(value) => check if the value exist in the linkedList
 * toString()=>a string representing all the values in the Linked List, formatted as:
 "  a  ->  b  ->  c  -> NULL"
+
+
+|  Assignment    |    link               |
+| -----------    | ----------------      |
+|  readme1.md.   |[linked-list-insertions](javascript/linked-list-insertions/readme1.md)  |
