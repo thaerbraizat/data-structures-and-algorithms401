@@ -86,3 +86,4 @@ If you just want to insert an element right to the beginning of the LinkedList, 
 |  Assignment    |    link               |
 | -----------    | ----------------      |
 |  readme1.md.   |[linked-list-insertions](javascript/linked-list-insertions/readme1.md)  |
+|  readme2.md.   |[linked-list-kth](javascript/linked-list-kth/readme2.md)  |
