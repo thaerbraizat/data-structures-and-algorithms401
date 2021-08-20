@@ -5,6 +5,7 @@ const Node = require('./node');
 class LinkedList {
   constructor() {
     this.head = null;
+    this.tail=null;
   }
 
   append(value) {
@@ -67,48 +68,58 @@ class LinkedList {
       return -1;
     }
   }
-  //   zipLists(test,test2){
+  findMid(head){
+    let slow =head;
+    let fast =head;
+    while(fast && fast.next){
+      slow=slow.next;
+      fast=fast.next.next;
+    }
+    console.log('slow',slow);
+    return slow;
+  }
+  isPalindrome(head){
 
-  //     let zipList=new LinkedList;
-  //     let current1=test.head;
-  //     let current2=test2.head;
-  //     if(current1 === null ){
-  //       return test2;
-  //     }
-  //     if(current2 === null ){
-  //       return test;
-  //     }
+    let midPoint = this.findMid(head);
 
-  //     let temp=true;
-  //     zipList.head=current1;
-  //     current1=current1.next;
+    console.log('midPoint',midPoint.head);
+    let tail = this.reverselist(midPoint);
+    console.log('head',head);
+    console.log('tail',tail);
 
-  //     while(current1 !== null || current2 !== null){
-  //       if(current1 === null){
-  //         zipList.append(current2.value);
-  //         current2=current2.next;
-  //       }
-  //       if(current2 === null){
-  //         zipList.append(current1.value);
-  //         current1=current1.next;
-  //       }
-  //       if(current1 !== null && current2 !==null){
-  //         if(temp){
-  //           zipList.append(current2.value);
-  //           current2=current2.next;
-  //         }else{
-  //           zipList.append(current1.value);
-  //           current1=current1.next;
-  //         }
-  //         temp=!temp;
-  //       }
-  //     }
-  //     return zipList;
+    console.log('midPoint',midPoint);
+    return this.compare(head,tail);
+  }
+  compare(head,tail){
+
+    while(head !==null && tail !==null){
+      if (head.value === tail.value ){
+        head=head.next;
+        tail=tail.next;
+      }else{
+        return false;
+      }
+    }
+    return true;
+  }
+  reverselist(head){
+
+    let prev = null;
+    let curr = head;
+    let nextTemp = null;
+
+    while(curr!== null) {
+      nextTemp = curr.next;
+      curr.next = prev;
+      prev = curr;
+      curr = nextTemp;
+
+    }
+    return prev;
+  }
+
+
   // }
-
-
-
-
 
   toString(){
     let count = 0;
@@ -142,13 +153,17 @@ function zipLists(test,test2){
   zipList.append(current1.value);
   current1=current1.next;
   while(current1 !== null || current2 !== null){
+
     if(current1 === null){
       zipList.append(current2.value);
       current2=current2.next;
     }
     if(current2 === null){
-      zipList.append(current1.value);
-      current1=current1.next;
+      if(current1 !== null){
+        zipList.append(current1.value);
+
+        current1=current1.next;
+      }
     }
     if(current1 !== null && current2 !== null){
       if(temp){
@@ -164,26 +179,37 @@ function zipLists(test,test2){
   return zipList;
 }
 
-
 const test = new LinkedList();
 test.append(10);
 test.append(20);
 test.append(30);
 test.append(40);
+// test.reverse();
+// console.log(test);
 
 // console.log(test.kthFromEnd(1));
 
 const test2 = new LinkedList();
-test2.append(100);
-test2.append(200);
-test2.append(300);
+test2.append('p');
+test2.append('o');
+test2.append('p');
 
+zipLists(test,test2);
+
+// console.log('qweqweqwe',test2.reverselist(test2.head));
+
+// test2.isPalindrome(test2);
+console.log('isssssssssssssssss',test2.isPalindrome(test2.head));
 
 test.toString();
 
-const x = zipLists(test,test2);
 
-console.log(x);
 
-console.log(x.head.next);
-module.exports = LinkedList;
+
+
+// console.log(x.head.next);
+module.exports = {
+
+  LinkedList,
+  zipLists
+};
