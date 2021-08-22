@@ -49,7 +49,7 @@ class PseudoQueue {
   }
 
 }
-
+console.log('tesat');
 
 const t = new PseudoQueue();
 t.enqueue(10);
