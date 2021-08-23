@@ -1,0 +1,15 @@
+{
+  "name": "stack-queue-animal-shelter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stack-queue-animal-shelter.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
