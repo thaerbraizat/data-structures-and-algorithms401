@@ -26,7 +26,6 @@ class PseudoQueue {
     // let st = new Stack;
     // st.push(value);
     // return this.storageQueue.push(st.pop());
-
   }
   dequeue() {
     let de = new Stack();
@@ -57,7 +56,7 @@ t.enqueue(2);
 t.enqueue(3);
 t.enqueue(4);
 
-t.dequeue();
+// t.dequeue();
 t.dequeue();
 // console.log('dequeq',t.dequeue());
 // console.log(t);
