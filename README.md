@@ -93,6 +93,7 @@ If you just want to insert an element right to the beginning of the LinkedList, 
 |  readme3.md.   |[linked-list-zip](javascript/linked-list-zip/readme3.md)                       |
 |  readme11.md.  |[stack-queue-pseudo](javascript/stack-queue-pseudo/readme11.md)                |
 |  readme12.md   |[stack-queue-animal-shelter](javascript/stack-queue-animal-shelter/readme12.md)|
+|  readme13.md   |[stack-queue-brackets](javascript/stack-queue-brackets/readme13.md)|
 
 
 
