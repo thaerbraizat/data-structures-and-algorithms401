@@ -6,13 +6,57 @@ describe('validateBrackets()', () => {
   it('true ', () => {
 
     expect(validateBrackets('{()}')).toEqual(true);
+
   });
+  it('true ', () => {
+
+    expect(validateBrackets('{}')).toEqual(true);
+
+  });
+  it('true ', () => {
+
+    expect(validateBrackets('{}(){}')).toEqual(true);
+
+  });
+  it('true ', () => {
+
+    expect(validateBrackets('{}{}[](())')).toEqual(true);
+
+  });
+  it('true ', () => {
+
+    expect(validateBrackets('(){}[[]]')).toEqual(true);
+
+  });
+  it('true ', () => {
+
+    expect(validateBrackets('()[[]]')).toEqual(true);
+
+  });
+
+
+
+
   describe('validateBrackets()', () => {
     it('false', () => {
 
 
 
       expect(validateBrackets('({)}')).toEqual(false);
+    });
+
+    it('false', () => {
+
+
+
+      expect(validateBrackets('(](')).toEqual(false);
+    });
+
+    it('false', () => {
+
+
+
+      expect(validateBrackets('[({}]')).toEqual(false);
     });
   });
 });
