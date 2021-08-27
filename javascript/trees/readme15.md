@@ -11,7 +11,7 @@ Returns: boolean indicating whether or not the value is in the tree at least onc
 
 ## Whiteboard Process
 
-![linked-list-zip](./img/linked-list-zip.JPG)
+![linked-list-zip](./img/whlab15.JPG)
 
 ## Approach & Efficiency
 we will made ne linked list and we will make temp =true then we will loop and evry time we will go to another list and take value and push it into linkedlist
