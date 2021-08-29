@@ -44,6 +44,8 @@ class BinaryTree {
     return false;
 
   }
+
+
   // recueseve
   // contains(value){
   //   let node = this.root;
@@ -114,17 +116,6 @@ class BinaryTree {
 
 
 
-  // root - left - right
-  preOrder() {
-    let result = [];
-    let traverse = (node) => {
-      result.push(node.value);
-      if (node.left) traverse(node.left);
-      if (node.right) traverse(node.right);
-    };
-    traverse(this.root);
-    return result;
-  }
 
   // left - root - right
   inOrder() {
@@ -149,18 +140,44 @@ class BinaryTree {
     traverse(this.root);
     return result;
   }
+  // root - left - right
+  preOrder() {
+    let result = [];
+    let traverse = (node) => {
+      result.push(node.value);
+      if (node.left) traverse(node.left);
+      if (node.right) traverse(node.right);
+    };
+    traverse(this.root);
+    return result;
+  }
+
+  maxTree(tree){
+    let arr=[];
+    arr =tree.preOrder();
+    console.log(arr);
+    let max = 0;
+    for (let i = 0; i < arr.length; i++) {
+      if(arr[i]>max){
+        max=arr[i];
+      }
+    }
+    return max ;
+  }
 }
+
+
 let tree = new BinaryTree;
 
 tree.add(10);
 tree.add(5);
 tree.add(15);
 tree.add(2);
-tree.add(4);
+tree.add(32);
 tree.add(11);
 
 console.log(tree);
-console.log(tree.contains(2));
-console.log(tree.contains(1210));
+
 console.log(tree.preOrder());
+console.log(tree.maxTree(tree));
 module.exports = BinaryTree;
