@@ -45,42 +45,28 @@ describe('Binary Tree', ()=>{
     expect(preOrder).toEqual(expectedOutput);
   });
 
-  it('inOrder', ()=> {
-    let expectedOutput = [6, 8, 7, 9, 2, 1, 4, 3, 5];
-    let inOrder = tree.inOrder();
-    console.log('inOrder output ---->', inOrder);
-    expect(inOrder).toEqual(expectedOutput);
-  });
-
-  it('postOrder', ()=> {
-    let expectedOutput = [8, 9, 7, 6, 2, 4, 5, 3, 1];
-    let postOrder = tree.postOrder();
-    console.log('postOrder output ---->', postOrder);
-    expect(postOrder).toEqual(expectedOutput);
-  });
-
-
-  it('Can successfully instantiate an empty tree', ()=> {
-    let testTree=new BinaryTree();
-
-    expect(testTree).toEqual( {'root': null});
-  });
-  it('Can successfully instantiate a tree with a single root node', ()=> {
-    let testTree=new BinaryTree();
-    testTree.add(2);
-
-    expect(testTree.root.value).toEqual(2);
-  });
-  it('Can successfully add a left child and right child to a single root node', ()=> {
+  it('Can successfully find the max', ()=> {
     let testTree=new BinaryTree();
     testTree.add(5);
     testTree.add(3);
     testTree.add(10);
 
-    expect(testTree.root.value).toEqual(5);
-    expect(testTree.root.left.value).toEqual(3);
-    expect(testTree.root.right.value).toEqual(10);
+    expect(testTree.maxTree(testTree)).toEqual(10);
+
   });
+  it('Can successfully find the max 2 value have max', ()=> {
+    let testTree=new BinaryTree();
+    testTree.add(5);
+    testTree.add(10);
+    testTree.add(10);
+    expect(testTree.maxTree(testTree)).toEqual(10);
+  });
+  it('return zero when the linkedList have no item', ()=> {
+    let testTree=new BinaryTree();
+
+    expect(testTree.maxTree(testTree)).toEqual(0);
+  });
+
 
 
 

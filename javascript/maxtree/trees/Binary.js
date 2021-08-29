@@ -144,6 +144,9 @@ class BinaryTree {
   preOrder() {
     let result = [];
     let traverse = (node) => {
+      if(node === null){
+        return 0;
+      }
       result.push(node.value);
       if (node.left) traverse(node.left);
       if (node.right) traverse(node.right);
