@@ -1,0 +1,15 @@
+{
+  "name": "tree-breadth-first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tree-breadth-first.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.1.0"
+  }
+}
