@@ -6,6 +6,7 @@ class Node {
   }
 }
 
+
 function breadthFirst(root) {
   if(!root)return null;
   let queue =[root];
