@@ -97,6 +97,7 @@ If you just want to insert an element right to the beginning of the LinkedList, 
 |  readme15.md   |[trees](javascript/trees/readme15.md)|
 |  readme16.md   |[maxtree](javascript/maxtree/trees/readme16.md)|
 |  readme17.md   |[tree-breadth-first](javascript/tree-breadth-first/readme17.md)|
+|  readme18.md   |[tree-fizz-buzz](javascript/tree-fizz-buzz/readme18.md)|
 
 
 
