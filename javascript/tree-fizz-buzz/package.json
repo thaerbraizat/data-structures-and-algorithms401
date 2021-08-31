@@ -1,0 +1,15 @@
+{
+  "name": "tree-fizz-buzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tree-fizz-buzz.js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.1.0"
+  }
+}
