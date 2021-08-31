@@ -2,42 +2,42 @@
 
 const Node = require('./node');
 class BinaryTree {
-  constructor(root=null) {
+  constructor(root = null) {
     this.root = root;
   }
   // no repeted
-  add(value){
+  add(value) {
     const newNode = new Node(value);
     let node = this.root;
-    if ( node === null ) {
+    if (node === null) {
       this.root = newNode;
       return;
     }
 
-    while(node !== null){
-      if(node.value > value){
-        if(node.left === null){
-          node.left=newNode;
+    while (node !== null) {
+      if (node.value > value) {
+        if (node.left === null) {
+          node.left = newNode;
           return;
         }
         node = node.left;
-      }else{
-        if(node.right === null){
-          node.right=newNode;
+      } else {
+        if (node.right === null) {
+          node.right = newNode;
           return;
         }
-        node =node.right;
+        node = node.right;
       }
     }
   }
-  contains(value){
+  contains(value) {
     let node = this.root;
-    while(node !== null){
-      if(value > node.value ){
+    while (node !== null) {
+      if (value > node.value) {
         node = node.right;
-      }else if(value<node.value){
-        node=node.left;
-      }else{
+      } else if (value < node.value) {
+        node = node.left;
+      } else {
         return true;
       }
     }
@@ -144,7 +144,7 @@ class BinaryTree {
   preOrder() {
     let result = [];
     let traverse = (node) => {
-      if(node === null){
+      if (node === null) {
         return 0;
       }
       result.push(node.value);
@@ -155,18 +155,34 @@ class BinaryTree {
     return result;
   }
 
-  maxTree(tree){
-    let arr=[];
-    arr =tree.preOrder();
-    console.log(arr);
-    let max = 0;
-    for (let i = 0; i < arr.length; i++) {
-      if(arr[i]>max){
-        max=arr[i];
-      }
-    }
-    return max ;
+  // maxTree(tree){
+  //   let arr=[];
+  //   arr =tree.preOrder();
+  //   console.log(arr);
+  //   let max = 0;
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if(arr[i]>max){
+  //       max=arr[i];
+  //     }
+  //   }
+  //   return max ;
+  // }
+
+  maxTree() {
+    if (!this.root) return 0;
+    let max = this.root.value;
+    let travers = (node) => {
+      if (node.left) travers(node.left);
+      if (node.right) travers(node.right);
+      if (node.value > max) max = node.value;
+    };
+
+    travers(this.root);
+    return max;
   }
+
+
+
 }
 
 
@@ -182,5 +198,5 @@ tree.add(11);
 console.log(tree);
 
 console.log(tree.preOrder());
-console.log(tree.maxTree(tree));
+console.log(tree.maxTree());
 module.exports = BinaryTree;
