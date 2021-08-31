@@ -47,7 +47,7 @@ function treeFuzzBuzz(tree) {
   
 
   let loop = (node) => {
-    node.value = (node.value % 3 === 0 && node.value % 5 === 0) ? 'fizzbuzz' : node.value % 5 === 0 ? 'buzz' : node.value % 3 === 0 ? 'fizz' : node.valuetoString() ;
+    node.value = (node.value % 3 === 0 && node.value % 5 === 0) ? 'fizzbuzz' : node.value % 5 === 0 ? 'buzz' : node.value % 3 === 0 ? 'fizz' : node.value.toString() ;
     arr.push( node.value);
     if (node.left) loop(node.left);
     if (node.right) loop(node.right);

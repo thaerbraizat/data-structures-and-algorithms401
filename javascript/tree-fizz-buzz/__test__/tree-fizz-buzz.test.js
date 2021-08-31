@@ -32,7 +32,7 @@ describe('Fizz Buzz Tree', () => {
 
 
   it('check function', () => {
-    expect(treeFuzzBuzz(tree)).toEqual(['buzz','buzz',11,'fizzbuzz','fizz','fizzbuzz','fizzbuzz', 2,4,]);
+    expect(treeFuzzBuzz(tree)).toEqual(['buzz','buzz',"11",'fizzbuzz','fizz','fizzbuzz','fizzbuzz', "2","4",]);
 
   });
 
