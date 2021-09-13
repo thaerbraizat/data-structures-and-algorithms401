@@ -15,3 +15,5 @@ function insertionSort(arr) {
 let array=[8,4,23,42,16,15];
 // insertionSort(array);
 console.log(insertionSort(array));
+
+module.exports=insertionSort;
