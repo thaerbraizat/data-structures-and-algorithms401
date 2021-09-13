@@ -1,15 +1,15 @@
 {
-  "name": "dataStructure",
+  "name": "selectionSort",
   "version": "1.0.0",
   "description": "",
-  "main": "linked-list.js",
+  "main": "sort.js",
   "scripts": {
-    "test": "jest --coverage --verbose"
+    "test": "jest --verbose --coverage"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^27.0.6"
+    "jest": "^27.1.1"
   }
 }
