@@ -102,3 +102,4 @@ If you just want to insert an element right to the beginning of the LinkedList, 
 |  readme18.md   |[tree-fizz-buzz](javascript/tree-fizz-buzz/readme18.md)|
 |  readme19.md   |[selectionSort](javascript/selectionSort/readme19.md)|
 |  readme20.md   |[MergeSortBased](javascript/MergeSortBased/readme20.md)|
+|  readme21.md   |[QuickSortBased](javascript/sortQ/readme21.md)|
