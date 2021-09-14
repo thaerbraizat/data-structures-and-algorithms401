@@ -1,0 +1,15 @@
+{
+  "name": "Quick",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Quick .js",
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.2.0"
+  }
+}
