@@ -112,16 +112,17 @@ class HashTable {
   leftJoin(leftHash, rightHash) {
     let left = [];
     let Data ;
-    for (let i = 0; i < leftHash.storage.length; i++) {
+    for (let i = 0; i < leftHash.map.length; i++) {
       Data = [];
-      if (leftHash.storage[i]) {
-        const leftKey = Object.keys(leftHash.storage[i].head.value);
-        const leftValue = Object.values(leftHash.storage[i].head.value);
+      if (leftHash.map[i]) {
+        console.log('lefffffffffffffffffffffffffffft',leftHash.map[i].head.val);
+        const leftKey = Object.keys(leftHash.map[i].head.val);
+        const leftValue = Object.values(leftHash.map[i].head.val);
         Data = Data.concat(leftKey);
         Data = Data.concat(leftValue);
-        if (rightHash.storage[i]) {
-          const rightKey = Object.keys(rightHash.storage[i].head.value);
-          const rightValue = Object.values(rightHash.storage[i].head.value);
+        if (rightHash.map[i]) {
+          const rightKey = Object.keys(rightHash.map[i].head.val);
+          const rightValue = Object.values(rightHash.map[i].head.val);
           if (rightKey[0] === leftKey[0]) {
             Data = Data.concat(rightValue);
           }
