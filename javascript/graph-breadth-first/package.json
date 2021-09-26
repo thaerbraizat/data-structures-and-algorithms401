@@ -1,0 +1,15 @@
+{
+  "name": "graph-breadth-first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "graph-breadth-first.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.2.2"
+  }
+}
