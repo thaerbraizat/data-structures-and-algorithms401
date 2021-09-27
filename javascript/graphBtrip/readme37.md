@@ -6,5 +6,5 @@ Return: cost or null
 
 ## Whiteboard Process
 
-![graphBtrip](./img/white27.JPG)
+![graphBtrip](./img/whcode277.JPG)
 
