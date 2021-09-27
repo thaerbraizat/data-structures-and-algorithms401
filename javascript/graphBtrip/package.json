@@ -1,0 +1,15 @@
+{
+  "name": "graphBtrip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "graphBtrip.js",
+  "scripts": {
+    "test": "jest --coverage --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.2.2"
+  }
+}
